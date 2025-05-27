@@ -4,7 +4,7 @@ import Company from "./Company";
 import "../css/Navbar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faChevronDown
+  faChevronDown, faUser
 } from '@fortawesome/free-solid-svg-icons';
 const Navbar=()=>{
     return(
@@ -29,6 +29,10 @@ const Navbar=()=>{
                 </li>
                 
             </ul>
+            <div className="user_det">
+                <FontAwesomeIcon icon={faUser} />
+                USER NAME
+            </div>
             <button className="logout">Logout</button>
             </div>
         </>
