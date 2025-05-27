@@ -6,10 +6,19 @@
     height: 50px;
     width: auto;
 }
+.invisible{
+    display: flex;
+    gap: 30px;
+}
 .navlist{
     list-style-type: none;
     display: flex;
     gap: 60px;
+}
+.ham{
+    display: none;
+    font-size: x-large;
+    padding-top: 5px;
 }
 .logout{
     color: white;
@@ -18,6 +27,12 @@
     font-family: "Poppins", sans-serif;
     height: 42px;
     width: 130px;
+}
+.logoutdiv{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 .chevron-icon1 {
   font-size: 0.6rem; 
@@ -53,4 +68,12 @@
 }
 .navitem1:hover .dropdown2{
   display: block;
+}
+@media screen and (max-width:1150px) {
+    .navlist{
+        display:none;
+    }
+    .ham{
+        display: block;
+    }
 }
