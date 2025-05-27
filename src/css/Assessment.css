@@ -1,0 +1,77 @@
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 400px;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+ 
+}
+
+.section-label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #9ca3af;
+  margin-bottom: 8px;
+}
+
+.menu-section {
+  margin-bottom: 16px;
+}
+
+.menu-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  background-color: #f3f4f6;
+}
+
+.icon {
+  color: #ef4444;
+  font-size: 20px;
+  margin-top: 2px;
+}
+
+.text-content .title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.text-content .subtitle {
+  font-size: 12px;
+  color: #6b7280;
+}
+.mega-menu::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+}

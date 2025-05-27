@@ -1,0 +1,51 @@
+.mainnav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo1{
+    height: 50px;
+    width: auto;
+}
+.navlist{
+    list-style-type: none;
+    display: flex;
+    gap: 60px;
+}
+.logout{
+    color: white;
+    background-color: #fc2947;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    height: 42px;
+    width: 130px;
+}
+.chevron-icon1 {
+  font-size: 0.6rem; 
+  margin-left: 4px;
+  padding-bottom: 2px;
+}
+.chevron-icon2 {
+  font-size: 0.6rem; 
+  margin-left: 4px;
+    padding-bottom: 2px;
+
+}
+.navitem{
+    position: relative;
+}
+.navitem1{
+    position: relative;
+}
+.dropdown1{
+    display: none;
+
+}
+.navitem:hover .dropdown1{
+    display: block;
+}
+.dropdown2{
+    display: none;
+}
+.navitem1:hover .dropdown2{
+  display: block;
+}
