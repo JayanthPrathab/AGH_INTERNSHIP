@@ -1,25 +1,47 @@
 .sidebar {
   position: fixed;
-  top: 0;
-  right: -100%;
+  top: 60px;
+  left: -100%;
   width: 290px;
-  height: 100vh;
+    overflow-y: auto; /* Enables vertical scroll */
+height: calc(100vh - 100px);
   background-color: white;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-  transition: right 0.3s ease;
+  transition: left 0.3s ease;
   z-index: 1000;
   padding: 20px;
+  font-family: "Inter", sans-serif;
 }
-
+.educ{
+  color: #6C7072;
+  padding-top: 5px;
+}
 .sidebar.open {
-  right: 0;
+  left: 0;
 }
-
+.sidebar-img{
+  height: 30px;
+  width: 30px;
+  margin-right: 12px;
+}
 .sidebar-header {
-  display: flex;
-  gap: 10px;
+  display: block;
 }
-
+.sidebar-contents{
+  display: flex;
+  align-items: center;
+}
+.user_det{
+  padding-top: 5px;
+}
+.logout-sidebar{
+    color: white;
+    background-color: #fc2947;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    height: 42px;
+    width: 130px;
+}
 .sidebar-navlist {
   list-style: none;
   padding: 0;
@@ -29,6 +51,8 @@
 .sidebar-navlist li {
   margin: 10px 0;
   cursor: pointer;
+   border-bottom: 1px solid #eee;
+   padding: 12px;
 }
 
 .close-btn {

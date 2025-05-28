@@ -12,11 +12,19 @@ import {
   faSignOut,
 } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
-    const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
   return (
     <>
       <div className="mainnav">
-        <img className="logo1" src={logo} alt="" />
+        <div className="log_ham">
+          <div className="ham">
+            <FontAwesomeIcon
+              onClick={() => setSidebarOpen(!isSidebarOpen)}
+              icon={faBars}
+            />
+          </div>
+          <img className="logo1" src={logo} alt="" />
+        </div>
         <ul className="navlist">
           <li>Home</li>
           <li>Practice</li>
@@ -41,18 +49,15 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="invisible">
-        <div className="user_det">
-          <FontAwesomeIcon icon={faUser} />
-          USER NAME
-        </div>
-        <button className="logout">
-          <div className="logoutdiv">
-            Logout <FontAwesomeIcon icon={faSignOut} />
+          <div className="user_det">
+            <FontAwesomeIcon icon={faUser} />
+            USER NAME
           </div>
-        </button>
-        <div className="ham">
-          <FontAwesomeIcon onClick={() => setSidebarOpen(true)} icon={faBars} />
-        </div>
+          <button className="logout">
+            <div className="logoutdiv">
+              Logout <FontAwesomeIcon icon={faSignOut} />
+            </div>
+          </button>
         </div>
       </div>
       <Sidebar isOpen={isSidebarOpen} onClose={() => setSidebarOpen(false)} />
