@@ -1,4 +1,6 @@
 import Assessment from "./Assessment";
+import Sidebarassess from "./Sidebarassess";
+import Sidebarcompany from "./Sidebarcompany";
 import Company from "./Company";
 import home from "../assets/home.png";
 import company from "../assets/company.png";
@@ -10,15 +12,18 @@ import model from "../assets/model.png";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faChevronDown,
+  faChevronRight,
   faUser,
   faSignOut,
 } from "@fortawesome/free-solid-svg-icons";
 import "../css/Sidebar.css";
-const Sidebar = ({ isOpen, onClose }) => {
-  const [showAssessment, setShowAssessment] = useState(false);
+const Sidebar = ({ isOpen, onClose}) => {
   const [showCompany, setShowCompany] = useState(false);
+  const [showAssessmentSidebar, setShowAssessmentSidebar] = useState(false);
+  const [showCompanySidebar,setshowCompanySidebar] = useState(false);
   return (
+    <>
+    {!showAssessmentSidebar && !showCompanySidebar && (
     <div className={`sidebar ${isOpen ? "open" : ""}`}>
       <div className="sidebar-header">
           <img
@@ -36,26 +41,18 @@ const Sidebar = ({ isOpen, onClose }) => {
         <li><div className="sidebar-contents"><img className="sidebar-img" src={practice} />Practice</div></li>
         <li
           className="navitem"
-          onClick={() => setShowAssessment(!showAssessment)}
+          onClick={() => setShowAssessmentSidebar(true)}
         >
           <div className="sidebar-contents"><img className="sidebar-img" src={assess} />
-            Assessment <FontAwesomeIcon icon={faChevronDown} />
+            <div>Assessment <FontAwesomeIcon icon={faChevronRight} /></div>
          
-          {showAssessment && (
-            <div className="dropdown1">
-              <Assessment />
-            </div>
-          )}</div>
+          </div>
         </li>
         <li><div className="sidebar-contents"><img className="sidebar-img" src={leader} />LeaderBoard</div></li>
-        <li className="navitem1" onClick={() => setShowCompany(!showCompany)}>
+        <li className="navitem1" onClick={() => setshowCompanySidebar(true)}>
           <div className="sidebar-contents"><img className="sidebar-img" src={company} />
-            Company Specific <FontAwesomeIcon icon={faChevronDown} />
-          {showCompany && (
-            <div className="dropdown2">
-              <Company />
-            </div>
-          )}</div>
+            <div>Company Specific <FontAwesomeIcon icon={faChevronRight} /></div>
+          </div>
         </li>
         <li><div className="sidebar-contents"><img className="sidebar-img" src={profile} />Profile</div></li>
       </ul>
@@ -65,6 +62,14 @@ const Sidebar = ({ isOpen, onClose }) => {
         </div>
       </button>
     </div>
+    )}
+    {showAssessmentSidebar && (
+        <Sidebarassess isOpen={true} onBack={() => setShowAssessmentSidebar(false)} />
+      )}
+      {showCompanySidebar && (
+        <Sidebarcompany isOpen={true} onBack={() => setshowCompanySidebar(false)} />
+      )}
+    </>
   );
 };
 export default Sidebar;

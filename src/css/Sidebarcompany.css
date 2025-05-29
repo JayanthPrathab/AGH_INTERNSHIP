@@ -1,0 +1,28 @@
+.company_sidebar1 {
+  position: fixed;
+  left: 0; /* Important: set to 0 when open */
+  top: 0;
+  height: 100vh;
+  width: 290px;
+  background-color: #fff;
+  z-index: 1001; /* Match .assessment-sub-sidebar */
+  padding: 20px 15px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* This handles the sliding effect */
+.company_sidebar1:not(.open) {
+  left: -290px;
+}
+.desc{
+    padding-bottom: 20px;
+    padding-top: 7px;
+}
+.assessment-item{
+    align-items: center;
+}
+.it1{
+    padding-left: 10px;
+}

@@ -30,6 +30,7 @@ height: calc(100vh - 100px);
 .sidebar-contents{
   display: flex;
   align-items: center;
+  
 }
 .user_det{
   padding-top: 5px;
