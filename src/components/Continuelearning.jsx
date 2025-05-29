@@ -38,7 +38,7 @@ const Continuelearning = () => {
     <>
       <div className="continue-section">
         <div className="continue-header">
-          <h2>Continue Learning</h2>
+          <h3 className="cl_title">Continue Learning</h3>
           <a href="/" className="view-all">
             View All &gt;
           </a>
