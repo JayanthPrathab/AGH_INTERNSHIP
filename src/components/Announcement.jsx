@@ -2,7 +2,10 @@ import "../css/Announcement.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBullhorn } from '@fortawesome/free-solid-svg-icons';
 import Continuelearning from "./Continuelearning";
+import Upcoming from "./Upcoming";
 import Featuredassess from "./Featuredassess";
+import Community from "./Community";
+import Footer from "./Footer";
 const Announcement=()=>{
     return(
         <>
@@ -18,7 +21,9 @@ const Announcement=()=>{
             </div>
             <Featuredassess/>
             <Continuelearning />
-            
+            <Upcoming />
+            <Community />
+            <Footer />
         </>
     );
 }

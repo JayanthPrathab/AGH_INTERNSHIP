@@ -1,0 +1,101 @@
+.webinar-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 20px 24px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  justify-content: space-between;
+  font-family: "Work Sans", sans-serif;
+  max-width: 900px;
+  margin: 20px auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.webinar-date {
+  background-color: #ff2d55;
+  color: white;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.webinar-month {
+  font-size: 12px;
+  display: block;
+}
+
+.webinar-day {
+  font-size: 20px;
+}
+
+.webinar-info {
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.webinar-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 4px;
+  color: #000;
+}
+
+.webinar-desc {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.webinar-time {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.clock-icon {
+  font-size: 14px;
+}
+
+.webinar-action {
+  align-self: flex-start;
+}
+
+.remind-btn {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ff2d55;
+  background: transparent;
+  color: #ff2d55;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  gap: 6px;
+  transition: 0.2s ease;
+    font-family: "Work Sans", sans-serif;
+
+}
+
+.remind-btn:hover {
+  background-color: #ffe5ec;
+}
+
+@media (max-width: 600px) {
+
+  .webinar-action {
+    width: 100%;
+  }
+
+  .remind-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
