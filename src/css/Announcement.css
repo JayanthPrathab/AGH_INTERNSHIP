@@ -1,0 +1,25 @@
+.speaker{
+    font-size: xxx-large;
+    color:#FF4D4D;
+    padding-left: 30px;
+        border-left: 5px solid #FF4D4D;
+
+}
+.announce_main{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+    align-items: center;
+}
+.ann_title{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.ann_cont{
+    font-size: 16px;
+    font-weight: 400;
+    color:#7F7C7C;
+}
