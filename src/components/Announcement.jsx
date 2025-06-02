@@ -6,6 +6,7 @@ import Upcoming from "./Upcoming";
 import Featuredassess from "./Featuredassess";
 import Community from "./Community";
 import Footer from "./Footer";
+import Liveclass from "./Liveclass";
 const Announcement=()=>{
     return(
         <>
@@ -21,6 +22,7 @@ const Announcement=()=>{
             </div>
             <Featuredassess/>
             <Continuelearning />
+            <Liveclass />
             <Upcoming />
             <Community />
             <Footer />

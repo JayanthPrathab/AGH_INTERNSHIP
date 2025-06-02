@@ -2,10 +2,10 @@
     display: flex;
     justify-content: space-between;
     font-size: smaller;
-    width: 100%;
     flex-wrap: wrap;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.10);
     border-bottom: .25px solid #ccc;
+    padding: 10px;
 }
 .back_button{
     display: flex;
@@ -55,4 +55,211 @@
     background-color: #FC2947;
     color: white;
     border-radius: 50px;
+}
+/* Sidebar container */
+.quiz_sidebar {
+  width: 265px;
+  background-color: #2F2F2F;
+  color: white;
+  height: 95vh;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 12px;
+  font-family: "Inter", sans-serif;
+  margin-right: 10px;
+  position: relative;
+}
+
+/* Toggle icon */
+/* Common vertical toggle icon when sidebar is hidden */
+.sidebar_toggle {
+    display: none;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2F2F2F;
+  color: white;
+  font-size: 22px;
+  z-index: 10000;
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 769px) {
+  .sidebar_toggle_inside {
+    display: none;
+  }
+}
+
+.sidebar_toggle_inside {
+  text-align: center;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+/* Mobile-specific behavior for the sidebar */
+@media screen and (max-width: 768px) {
+  .quiz_sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    max-height: 100dvh;
+    width: 100%;
+    background-color: #2F2F2F;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 12px;
+    z-index: 9999;
+        overflow-y: auto; /* Add scroll if content overflows */
+  }
+
+  .logo_section {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .quiz_sidebar.visible {
+    transform: translateY(0%);
+  }
+.sidebar_toggle{
+    display: block;
+}
+  .quiz_sidebar.hidden {
+    transform: translateY(100%);
+  }
+}
+
+
+/* Logo */
+.logo_section {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.logo_icon {
+  height: 40px;
+  margin-right: 10px;
+}
+.logo_text .guru {
+  font-weight: bold;
+  font-size: 12px;
+}
+.logo_text .name {
+  font-size: 10px;
+}
+
+/* Menu title */
+.quiz_menu_label {
+  font-size: 10px;
+  color: #777;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Menu item */
+.quiz_menu_item {
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  cursor: pointer;
+  background-color: #2F2F2F;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.quiz_menu_item:hover {
+  background-color: #383838;
+}
+
+/* Active section */
+.quiz_menu_item.active {
+  background-color: #353535;
+}
+
+/* Left icon & label */
+.submenu {
+  position: relative;
+  margin-left: 30px;
+  padding-left: 10px;
+}
+
+.submenu_item {
+  position: relative;
+  padding: 8px 0 8px 24px;
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.submenu_icon{
+    height: 20px;
+    width: 20px;
+}
+.submenu_icon1{
+    height: 15px;
+    width: auto;
+}
+.submenu_item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  width: 18px;
+  height: 50px;
+  border: 2px solid #555;
+  border-top: none;
+  border-right: none;
+  border-radius: 0 0 0 10px;
+  transform: translateY(-50%);
+  background-color: transparent;
+}
+
+.submenu_item:first-child::before {
+      height: 21px;
+}
+
+.submenu_item .lock_icon {
+  margin-left: auto;
+  color: #aaa;
+}
+
+.center_content {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Work Sans",sans-serif;
+}
+
+.test_heading {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.test_details {
+    font-weight: 500;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.start_test_button {
+  padding: 10px 20px;
+  background-color: #FC2947;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
 }

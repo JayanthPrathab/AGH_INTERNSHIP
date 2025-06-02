@@ -20,9 +20,9 @@ const Progress = () => {
             <img className="profilepic" src={prof} alt="" />
           </div>
           <div className="textcont">
-            <div className="username">Muskan Verma </div>
-            <div className="email">muskanvermabsp@gmail.com</div> <br />
-            <div className="college">SRM University</div> <br />
+            <div className="username">Jayanth Prathab S R </div>
+            <div className="email">srjayanth2004@gmail.com</div> <br />
+            <div className="college">St.Joseph's Institure of Technology</div> <br />
           </div>
         </div>
         <div className="progressbar">

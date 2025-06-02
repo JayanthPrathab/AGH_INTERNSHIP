@@ -1,0 +1,54 @@
+.liv_img1{
+    width: 300px;
+    height: 175px;
+}
+.liv_img2{
+    width: 190px;
+    height: 175px;
+}
+.main_live{
+    display: flex;
+    gap: 20px;
+}
+.live_title{
+    font-family: "Work Sans",sans-serif;
+font-weight: 700;
+font-size: 22px;
+}
+.live_cont{
+    font-family: "Work Sans",sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0%;
+color: #787474;
+}
+.live_button1{
+    width: 130;
+height: 42;
+gap: 10px;
+border-radius: 4px;
+padding-top: 10px;
+padding-right: 37px;
+padding-bottom: 10px;
+padding-left: 37px;
+border: none;
+background-color: #FC2947;
+color: white;
+font-family: "Work Sans",sans-serif;
+}
+.live_button2{
+    width: 160;
+height: 42;
+gap: 10px;
+border-radius: 4px;
+padding-top: 10px;
+padding-right: 37px;
+padding-bottom: 10px;
+padding-left: 37px;
+border-width: 1px;
+color: #FC2947;
+border-color: #FC2947;
+background-color: white;
+font-family: "Work Sans",sans-serif;
+}
