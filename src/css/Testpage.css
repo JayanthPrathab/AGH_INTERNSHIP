@@ -58,17 +58,18 @@
 }
 /* Sidebar container */
 .quiz_sidebar {
-  width: 265px;
+  width: 270px;
   background-color: #2F2F2F;
   color: white;
-  height: 95vh;
+  height: 100dvh;
   box-sizing: border-box;
   padding: 20px 10px;
   font-family: 'Segoe UI', sans-serif;
   border-radius: 12px;
   font-family: "Inter", sans-serif;
   margin-right: 10px;
-  position: relative;
+  position: fixed;
+  overflow-y: auto;
 }
 
 /* Toggle icon */
@@ -123,7 +124,7 @@
   }
 
   .logo_section {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
     z-index: 100;
@@ -197,7 +198,7 @@
 
 .submenu_item {
   position: relative;
-  padding: 8px 0 8px 24px;
+  padding: 8px 5px 8px 24px;
   color: #ccc;
   font-size: 14px;
   font-weight: 500;
@@ -237,6 +238,7 @@
 
 .center_content {
   text-align: center;
+  align-content: center;
   margin-top: 50px;
   font-family: "Work Sans",sans-serif;
 }

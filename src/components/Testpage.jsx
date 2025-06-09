@@ -27,8 +27,32 @@ const Testpage = () => {
     { title: "Divisibility Rules", locked: false },
     { title: "Prime Numbers", locked: false },
     { title: "Factors & Multiples", locked: true },
-    { title: "HCF & LCM", locked: false },
+    { title: "HCF & LCM", locked: true }, //accessibility adjusted here
     { title: "Fractions & Decimals", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },{ title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
+    { title: "Integers", locked: true },
     { title: "Integers", locked: true },
   ];
 
@@ -130,7 +154,7 @@ const Testpage = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div><br /><br /><br />
           <div className="center_content">
             <h2 className="test_heading">{selectedTopic}</h2>
             <p className="test_details">
